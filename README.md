@@ -11,9 +11,11 @@
 
 # jmsdnns.vim
 
-Welcome to JmsDnns's Vim environment
+Welcome to JmsDnns's Vim environment.
 
 My goal for this config is to keep things simple, yet powerful; colorful, yet subtle; and both easy to understand or configure.
+
+_This project is inspired by my friend Steve's [epic vim environment](https://github.com/spf13/spf13-vim)._
 
 # Plugins
 
