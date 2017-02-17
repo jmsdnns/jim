@@ -42,6 +42,7 @@ set shiftwidth=4 " << and >> shifts text over 4 characters
 set shiftround  "round to nearest shiftwidth
 set expandtab " tabs are spaces
 set showmatch " highlight matching [{()}]
+set mouse=a " mouse clicks move cursor
 
 
 """ Buffers
