@@ -35,7 +35,7 @@ in edit mode.
 * `{` - go backward by paragraph (the next blank line)
 * `gg` - go to the top of the page
 * `G` - go the bottom of the page
-* `: [num] [enter]` - go to line number
+* `:[num]` - go to line number
 
 
 ## Edit Mode
@@ -51,10 +51,9 @@ in edit mode.
     * `cc` - change an entire line
     * `ce` - changes from the cursor to the end of the cursor word
 * `d` - delete
-    * `d` - [movement command] deletes from the cursor to the move-to point.
+    * `d [movement command]` - deletes from the cursor to the move-to point.
     * `dd` - delete the current line
-    * `de` deletes from the cursor to the end of the current word
-* `r [char]` - replace a single character with the specified char (does not use insert mode)
+    * `de` - deletes from the cursor to the end of the current word
 * `J` - join line below to the current one
 * `Esc` - exit insert mode
 
