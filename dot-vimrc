@@ -31,6 +31,7 @@ set ruler " each window shows cursor position info
 set showcmd " display incomplete command
 set wildmenu " visual autocomplete for command menu
 set modeline " Respect modeline in files
+set foldcolumn=1 " 1 character margin around windows
 
 
 """ Interactive behavior
@@ -42,7 +43,7 @@ set shiftwidth=4 " << and >> shifts text over 4 characters
 set shiftround  "round to nearest shiftwidth
 set expandtab " tabs are spaces
 set showmatch " highlight matching [{()}]
-set mouse=a " mouse clicks move cursor
+set mouse=a " all mouse interactions are enabled
 
 
 """ Buffers
