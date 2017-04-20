@@ -42,11 +42,16 @@ set shiftwidth=4 " << and >> shifts text over 4 characters
 set shiftround  "round to nearest shiftwidth
 set expandtab " tabs are spaces
 set showmatch " highlight matching [{()}]
+set mouse+=a " turn all mouse interactions on
+
+
+" Make ctrl-c paste to buffer
+map <C-c> y:e ~/clipsongzboard<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
 
 
 """ Buffers
-:nnoremap <Tab> :bnext<CR>
-:nnoremap <S-Tab> :bprevious<CR>
+:nnoremap <Tab> :bnext!<CR>
+:nnoremap <S-Tab> :bprevious!<CR>
 :nnoremap <C-n> :NERDTreeToggle<CR>
 
 
@@ -54,8 +59,7 @@ set showmatch " highlight matching [{()}]
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1 " top bar for list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " no path in buffer name
-" Use powerline fonts - https://github.com/powerline/fonts
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 1 " use powerline fonts
 
 
 """ ctrlp
