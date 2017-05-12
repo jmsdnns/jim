@@ -17,5 +17,6 @@ git clone https://github.com/ctrlpvim/ctrlp.vim
 git clone https://github.com/scrooloose/nerdtree.git
 git clone https://github.com/vim-airline/vim-airline.git
 git clone https://github.com/arcticicestudio/nord-vim.git
+git clone https://github.com/moll/vim-bbye
 
 cd $ORIGDIR
