@@ -45,6 +45,10 @@ set showmatch " highlight matching [{()}]
 set mouse+=a " turn all mouse interactions on
 
 
+""" Conceal
+set conceallevel=2
+
+
 " Make ctrl-c paste to buffer
 if has('unix')
   if has('mac')       " osx
@@ -60,6 +64,7 @@ endif
 :nnoremap <Tab> :bnext!<CR>
 :nnoremap <S-Tab> :bprevious!<CR>
 :nnoremap <C-n> :NERDTreeToggle<CR>
+:nnoremap <C-a> :TagbarToggle<CR>
 
 
 """ airline
@@ -70,11 +75,25 @@ let g:airline_powerline_fonts = 1 " use powerline fonts
 
 
 """ ctrlp
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_match_window = 'min:4,max:10,results=100'
+"let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_user_command = {
+    \ 'types': {
+    \ 1: ['.git', 'cd %s && git ls-files'],
+    \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+    \ },
+    \ 'fallback': 'ag %s -l --nocolor --nogroup --hidden 
+    \ --ignore out
+    \ --ignore .git
+    \ --ignore .hg
+    \ --ignore .DS_Store
+    \ --ignore "**/*.pyc"
+    \ --ignore "**/*.class"
+    \ -g ""'
+    \ }
+"let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 
 """ File types
@@ -87,6 +106,9 @@ augroup configgroup
     autocmd FileType css set smartindent
     autocmd FileType html set formatoptions+=tl
     autocmd FileType make set noexpandtab shiftwidth=8
+    autocmd FileType java setlocal tabstop=2
+    autocmd FileType java setlocal shiftwidth=2
+    autocmd FileType java setlocal softtabstop=2
     autocmd FileType ruby setlocal tabstop=2
     autocmd FileType ruby setlocal shiftwidth=2
     autocmd FileType ruby setlocal softtabstop=2
@@ -97,3 +119,4 @@ augroup configgroup
     autocmd BufEnter *.sh setlocal shiftwidth=4
     autocmd BufEnter *.sh setlocal softtabstop=4
 augroup END
+
