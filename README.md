@@ -38,7 +38,7 @@ Plugins are managed with [pathogon](https://github.com/tpope/vim-pathogen).
 
 # Theme
 
-![Screenshot of jmsdnns.vim using the Nord Vimm theme](https://github.com/jmsdnns/jmsdnns.vim/blog/master/img/jmsdnns.vim.png)
+![Screenshot of jmsdnns.vim using the Nord Vimm theme](https://github.com/jmsdnns/jmsdnns.vim/blob/master/img/jmsdnns.vim.png)
 
 I use a theme called Nord. It's an arctic, north-bluish theme from Arctic Ice Studio.
 
