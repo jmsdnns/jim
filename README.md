@@ -9,25 +9,38 @@
  |__/
 ```
 
-# jmsdnns.vim
+# Jms Dnns's Vim environment.
 
-Welcome to JmsDnns's Vim environment.
+My goal for this environment is to keep things simple, yet powerful; colorful, yet subtle; and both easy to understand or reconfigure.
 
-My goal for this config is to keep things simple, yet powerful; colorful, yet subtle; and both easy to understand or configure.
-
-_This project is inspired by my friend Steve's [epic vim environment](https://github.com/spf13/spf13-vim)._
+The environment avoids deviating too far from Vim's defaults. It focuses primarily on adding extra functionality on top of a regular Vim install.
 
 # Plugins
 
-The plugins I use are:
+Plugins are managed with [pathogon](https://github.com/tpope/vim-pathogen).
 
-* [ctrl-p](https://github.com/ctrlpvim/ctrlp.vim)
-* [nerdtree](https://github.com/scrooloose/nerdtree)
-* [airline](https://github.com/vim-airline/vim-airline)
+## UI Enhancements
+
+* [airline](https://github.com/vim-airline/vim-airline): Configurable status and tablines that look great.
+* [ctrl-p](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file finder with a preference for most recently used files.
+* [nerdtree](https://github.com/scrooloose/nerdtree): File system explorer.
+* [tagbar](https://github.com/majutsushi/tagbar): Displays tags (eg. ctags) in a window, ordered by scope.
+
+## Buffers
+
+* [vim-bbye](https://github.com/moll/vim-bbye): Provides a `:Bd` command that closes a buffer without closing its window
+
+## Languages
+
+* [markdown](https://github.com/plasticboy/vim-markdown)
+* [scala](https://github.com/derekwyatt/vim-scala)
+* [typescript](https://github.com/leafgarland/typescript-vim.git)
 
 # Theme
 
-I use a theme called Nord. It's an arctic, north-bluish clean and elegant theme.
+![Screenshot of jmsdnns.vim using the Nord Vimm theme](https://github.com/jmsdnns/jmsdnns.vim/blog/master/img/jmsdnns.vim.png)
+
+I use a theme called Nord. It's an arctic, north-bluish theme from Arctic Ice Studio.
 
 * [nord](https://github.com/arcticicestudio/nord-vim)
 
