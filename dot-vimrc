@@ -7,10 +7,10 @@
 "   _/ |
 "  |__/
 "
-"  Welcome to JmsDnns's Vim environment
+"  Welcome to Jms Dnns's Vim environment
 "
 "  My goal for this config is to keep things simple, yet powerful. Colorful,
-"  yet subtle; and both easy to understand or configure.
+"  yet subtle; and both easy to understand or tweak.
 "
 "  Please see github.com/jmsdnns/jmsdnns.vim for more.
 
@@ -35,34 +35,27 @@ set modeline " Respect modeline in files
 
 """ Interactive behavior
 set incsearch " search as characters are entered
-set noai " disable autoindent
 set backspace=indent,eol,start "free-form delete
 set tabstop=4 " tabs are four spaces wide
 set shiftwidth=4 " << and >> shifts text over 4 characters
 set shiftround  "round to nearest shiftwidth
 set expandtab " tabs are spaces
-set showmatch " highlight matching [{()}]
 set mouse+=a " turn all mouse interactions on
+set showmatch " highlight matching brackets
+" matching bracket has different color from cursor
+hi MatchParen cterm=none ctermbg=blue ctermfg=white
 
 
-""" Conceal
-set conceallevel=2
-
-
-" Make ctrl-c paste to buffer
-if has('unix')
-  if has('mac')       " osx
-    map <C-c> y:e ~/clipsongzboard<CR>P:w !pbcopy<CR><CR>:Bdelete!<CR>
-  else                " linux, bsd, etc
-    map <C-c> :w !xclip -i -sel c<CR><CR>
-  endif
-endif
-"map <C-c> y:e ~/clipsongzboard<CR>P:w !pbcopy<CR><CR>:bdelete!<CR>
+""" Paste mode prevents bad formatting while pasting
+set pastetoggle=<F2>
 
 
 """ Buffers
 :nnoremap <Tab> :bnext!<CR>
 :nnoremap <S-Tab> :bprevious!<CR>
+
+
+""" Navigation
 :nnoremap <C-n> :NERDTreeToggle<CR>
 :nnoremap <C-a> :TagbarToggle<CR>
 
@@ -77,8 +70,8 @@ let g:airline_powerline_fonts = 1 " use powerline fonts
 """ ctrlp
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
-let g:ctrlp_match_window = 'min:4,max:10,results=100'
-"let g:ctrlp_match_window = 'bottom,order:ttb'
+"let g:ctrlp_match_window = 'min:4,max:10,results=100'
+let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_user_command = {
     \ 'types': {
     \ 1: ['.git', 'cd %s && git ls-files'],
@@ -93,28 +86,35 @@ let g:ctrlp_user_command = {
     \ --ignore "**/*.class"
     \ -g ""'
     \ }
-"let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 
 """ File types
-filetype on "enable filetype detection
+filetype on " enable filetype detection
 augroup configgroup
     autocmd!
     autocmd VimEnter * highlight clear SignColumn
+
     autocmd FileType c,cpp,slang set cindent
     autocmd FileType c set formatoptions+=ro
+
     autocmd FileType css set smartindent
+
     autocmd FileType html set formatoptions+=tl
+
     autocmd FileType make set noexpandtab shiftwidth=8
+    autocmd BufEnter Makefile setlocal noexpandtab
+
     autocmd FileType java setlocal tabstop=2
     autocmd FileType java setlocal shiftwidth=2
     autocmd FileType java setlocal softtabstop=2
+
     autocmd FileType ruby setlocal tabstop=2
     autocmd FileType ruby setlocal shiftwidth=2
     autocmd FileType ruby setlocal softtabstop=2
     autocmd FileType ruby setlocal commentstring=#\ %s
+
     autocmd FileType python setlocal commentstring=#\ %s
-    autocmd BufEnter Makefile setlocal noexpandtab
+
     autocmd BufEnter *.sh setlocal tabstop=4
     autocmd BufEnter *.sh setlocal shiftwidth=4
     autocmd BufEnter *.sh setlocal softtabstop=4
