@@ -17,7 +17,7 @@ The environment avoids deviating too far from Vim's defaults. It focuses primari
 
 # Plugins
 
-Plugins are managed with [pathogon](https://github.com/tpope/vim-pathogen).
+Plugins are managed with [pathogen](https://github.com/tpope/vim-pathogen).
 
 ## UI Enhancements
 
