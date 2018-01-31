@@ -9,7 +9,7 @@
  |__/
 ```
 
-# Jms Dnns's Vim environment.
+# JmsDnns's Vim environment.
 
 My goal for this environment is to keep things simple, yet powerful; colorful, yet subtle; and both easy to understand or reconfigure.
 
