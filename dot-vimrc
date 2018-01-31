@@ -43,7 +43,7 @@ set expandtab " tabs are spaces
 set mouse+=a " turn all mouse interactions on
 set showmatch " highlight matching brackets
 " matching bracket has different color from cursor
-hi MatchParen cterm=none ctermbg=blue ctermfg=white
+hi MatchParen cterm=none ctermbg=gray ctermfg=white
 
 
 """ Paste mode prevents bad formatting while pasting
