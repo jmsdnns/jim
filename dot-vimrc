@@ -57,6 +57,7 @@ set pastetoggle=<F2>
 
 """ Navigation
 :nnoremap <C-n> :NERDTreeToggle<CR>
+:nnoremap <C-e> :NERDTreeFind<CR>
 :nnoremap <C-a> :TagbarToggle<CR>
 
 
