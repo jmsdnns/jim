@@ -94,13 +94,13 @@ augroup configgroup
     autocmd FileType make set noexpandtab shiftwidth=8
     autocmd BufEnter Makefile setlocal noexpandtab
 
-    autocmd FileType java setlocal tabstop=2
-    autocmd FileType java setlocal shiftwidth=2
-    autocmd FileType java setlocal softtabstop=2
+    autocmd FileType java setlocal tabstop=4
+    autocmd FileType java setlocal shiftwidth=4
+    autocmd FileType java setlocal softtabstop=4
 
-    autocmd FileType scala setlocal tabstop=2
-    autocmd FileType scala setlocal shiftwidth=2
-    autocmd FileType scala setlocal softtabstop=2
+    autocmd FileType scala setlocal tabstop=4
+    autocmd FileType scala setlocal shiftwidth=4
+    autocmd FileType scala setlocal softtabstop=4
 
     autocmd FileType ruby setlocal tabstop=2
     autocmd FileType ruby setlocal shiftwidth=2
