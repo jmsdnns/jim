@@ -21,6 +21,8 @@ Plugins are managed with [pathogen](https://github.com/tpope/vim-pathogen).
 
 ## UI Enhancements
 
+The UI Enhancements are mostly about providing ways to sort through code.
+
 * [airline](https://github.com/vim-airline/vim-airline): Configurable status and tablines that look great.
 * [ctrl-p](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file finder with a preference for most recently used files.
 * [nerdtree](https://github.com/scrooloose/nerdtree): File system explorer.
@@ -28,7 +30,8 @@ Plugins are managed with [pathogen](https://github.com/tpope/vim-pathogen).
 
 ## Buffers
 
-* [vim-bbye](https://github.com/moll/vim-bbye): Provides a `:Bd` command that closes a buffer without closing its window
+* [bookmarks](https://github.com/MattesGroeger/vim-bookmarks): Bookmarks and annotations for files.
+* [bbye](https://github.com/moll/vim-bbye): Provides a `:Bd` command that closes a buffer without closing its window.
 
 ## Languages
 
