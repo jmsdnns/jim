@@ -29,7 +29,6 @@ set visualbell " blink the screen instead of beeping
 set noerrorbells " Disable error bells
 set ruler " each window shows cursor position info
 set showcmd " display incomplete command
-set wildmenu " visual autocomplete for command menu
 set modeline " Respect modeline in files
 
 
