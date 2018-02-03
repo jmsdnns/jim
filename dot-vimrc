@@ -49,25 +49,25 @@ hi MatchParen cterm=none ctermbg=gray ctermfg=white
 set pastetoggle=<F2>
 
 
-""" Buffers
+""" Buffer Controls
 :nnoremap <Tab> :bnext!<CR>
 :nnoremap <S-Tab> :bprevious!<CR>
 
 
-""" Navigation
-:nnoremap <C-n> :NERDTreeToggle<CR>
-:nnoremap <C-e> :NERDTreeFind<CR>
+""" UI Controls
 :nnoremap <C-a> :TagbarToggle<CR>
+:nnoremap <C-e> :NERDTreeFind<CR>
+:nnoremap <C-n> :NERDTreeToggle<CR>
 
 
-""" airline
+""" Airline
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1 " top bar for list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " no path in buffer name
 let g:airline_powerline_fonts = 1 " use powerline fonts
 
 
-""" ctrlp
+""" CtrlP
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_match_window = 'bottom,order:ttb,min:10,max:10'
@@ -78,7 +78,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 
-""" File types
+""" File Specifics
 filetype on " enable filetype detection
 augroup configgroup
     autocmd!
