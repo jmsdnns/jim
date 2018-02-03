@@ -50,14 +50,14 @@ set pastetoggle=<F2>
 
 
 """ Buffer Controls
-:nnoremap <Tab> :bnext!<CR>
-:nnoremap <S-Tab> :bprevious!<CR>
+nnoremap <Tab> :bnext!<CR>
+nnoremap <S-Tab> :bprevious!<CR>
 
 
 """ UI Controls
-:nnoremap <C-a> :TagbarToggle<CR>
-:nnoremap <C-e> :NERDTreeFind<CR>
-:nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-a> :TagbarToggle<CR>
+nnoremap <C-e> :NERDTreeFind<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 
 """ Navigating Splits
