@@ -60,6 +60,13 @@ set pastetoggle=<F2>
 :nnoremap <C-n> :NERDTreeToggle<CR>
 
 
+""" Navigating Splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+
 """ Airline
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1 " top bar for list of buffers
