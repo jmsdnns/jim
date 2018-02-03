@@ -15,6 +15,10 @@ My goal for this environment is to keep things simple, yet powerful; colorful, y
 
 The environment avoids deviating too far from Vim's defaults. It focuses primarily on adding extra functionality on top of a regular Vim install.
 
+This is what it looks like:
+
+![Screenshot of jmsdnns.vim using the Nord Vim theme](https://github.com/jmsdnns/jmsdnns.vim/blob/master/img/jmsdnns.vim.png)
+
 # Plugins
 
 Plugins are managed with [pathogen](https://github.com/tpope/vim-pathogen).
@@ -41,15 +45,17 @@ The UI Enhancements are mostly about providing ways to sort through code.
 
 # Theme
 
-![Screenshot of jmsdnns.vim using the Nord Vimm theme](https://github.com/jmsdnns/jmsdnns.vim/blob/master/img/jmsdnns.vim.png)
+Here's that screenshot again from above:
 
-I use a theme called Nord. It's an arctic, north-bluish theme from Arctic Ice Studio.
+![Screenshot of jmsdnns.vim using the Nord Vim theme](https://github.com/jmsdnns/jmsdnns.vim/blob/master/img/jmsdnns.vim.png)
+
+This is a theme called Nord. It's an arctic, north-bluish theme from [Arctic Ice Studio](https://github.com/arcticicestudio).
 
 * [nord](https://github.com/arcticicestudio/nord-vim)
 
-For Nord to look correct you'll need to install the colors in your terminal too.
+For Nord to look correct you'll need to install some color settings in your terminal.
 
 * [macOS Terminal](https://github.com/arcticicestudio/nord-terminal-app)
 * [Gnome Terminal](https://github.com/arcticicestudio/nord-gnome-terminal)
 
-More Terminal options are available on the Nord theme page if use something else.
+There are more Terminal options available on the [Nord theme page](https://github.com/arcticicestudio/nord).
