@@ -19,10 +19,6 @@
 call pathogen#infect()
 
 
-""" Nordic Colors
-colorscheme nord
-
-
 """ UI
 syntax on " syntax highlighting
 set visualbell " blink the screen instead of beeping
@@ -41,11 +37,14 @@ set shiftround  "round to nearest shiftwidth
 set expandtab " tabs are spaces
 set mouse+=a " turn all mouse interactions on
 set showmatch " highlight matching brackets
-" matching bracket has different color from cursor
+
+
+""" Colors
+colorscheme nord
 hi MatchParen cterm=none ctermbg=gray ctermfg=white
 
 
-""" Paste mode prevents bad formatting while pasting
+""" Paste Mode: prevents bad formatting while pasting
 set pastetoggle=<F2>
 
 
