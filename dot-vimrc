@@ -31,7 +31,9 @@ set modeline " Respect modeline in files
 """ Interactive behavior
 set incsearch " search as characters are entered
 set backspace=indent,eol,start "free-form delete
-set mouse=r
+"set mouse=n
+"set mouse=r
+set mouse=i
 set showmatch " highlight matching brackets
 
 
@@ -69,15 +71,10 @@ let g:airline#extensions#tabline#fnamemod = ':t' " no path in buffer name
 let g:airline_powerline_fonts = 1 " use powerline fonts
 
 
-""" CtrlP
-let g:ctrlp_switch_buffer = 0
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_match_window = 'bottom,order:ttb,min:10,max:10'
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(pyc|class|DS_Store)$',
-  \ }
+""" Markdown
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_toml_frontmatter = 1
 
 
 """ Global File Settings
@@ -101,4 +98,5 @@ autocmd Filetype python setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab 
 autocmd Filetype ruby setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab autoindent
 
 """ Web
-autocmd FileType css,html,javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2 smartindent formatoptions+=tl
+autocmd FileType css,html setlocal tabstop=2 softtabstop=2 shiftwidth=2 smartindent formatoptions+=tl
+autocmd FileType javascript setlocal tabstop=4 softtabstop=4 shiftwidth=4 smartindent formatoptions+=tl
