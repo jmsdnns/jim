@@ -28,4 +28,7 @@ git clone https://github.com/moll/vim-bbye
 ### Languages
 git clone https://github.com/plasticboy/vim-markdown
 
+### Syntax and Style
+git clone https://github.com/nvie/vim-flake8
+
 popd
