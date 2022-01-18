@@ -1,6 +1,6 @@
-# jmsdnns.vim setup script
+# jim setup script
 
-ORIGDIR=$PWD
+pushd $PWD
 
 ## Setup environment
 cp dot-vimrc ~/.vimrc
@@ -28,4 +28,4 @@ git clone https://github.com/moll/vim-bbye
 ### Languages
 git clone https://github.com/plasticboy/vim-markdown
 
-cd $ORIGDIR
+popd
