@@ -17,7 +17,7 @@ The environment avoids deviating too far from Vim's defaults. It focuses primari
 
 This is what it looks like:
 
-![Screenshot of jmsdnns.vim using the Nord Vim theme](/img/jmsdnns.vim.png)
+![Screenshot of jmsdnns.vim using the Nord Vim theme](/img/jim.png)
 
 # Plugins
 
