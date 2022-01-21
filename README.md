@@ -27,16 +27,12 @@ Plugins are managed with [pathogen](https://github.com/tpope/vim-pathogen).
 * [nerdtree](https://github.com/scrooloose/nerdtree): File system explorer.
 * [tagbar](https://github.com/majutsushi/tagbar): Displays tags (eg. ctags) in a window, ordered by scope.
 * [bbye](https://github.com/moll/vim-bbye): Provides a `:Bd` command that closes a buffer without closing its window.
-* [markdown](https://github.com/plasticboy/vim-markdown)
-* [flake8](https://github.com/nvie/vim-flake8)
+* [markdown](https://github.com/plasticboy/vim-markdown): Support for markdown
+* [flake8](https://github.com/nvie/vim-flake8): Support for python's flake8
 
 # Theme
 
-Here's that screenshot again from above:
-
-![Screenshot of jim using the Nord Vim theme](/img/jim.png)
-
-This is a theme called Nord. It's an arctic, north-bluish theme from [Arctic Ice Studio](https://github.com/arcticicestudio).
+The theme shown above is a theme called Nord. It's an arctic, north-bluish theme from [Arctic Ice Studio](https://github.com/arcticicestudio).
 
 * [nord](https://github.com/arcticicestudio/nord-vim)
 
